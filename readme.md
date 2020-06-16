@@ -116,8 +116,8 @@ If you find this code useful for your research, please cite our paper
 >  &nbsp; &nbsp;  title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
 >  &nbsp; &nbsp;  author={Liang, Jian and Hu, Dapeng and Feng, Jiashi},  
 >  &nbsp; &nbsp;  booktitle={International Conference on Machine Learning (ICML)},  
->  &nbsp; &nbsp;  pages={xx-xx},
->  &nbsp; &nbsp;  month = {July},
+>  &nbsp; &nbsp;  pages={xx-xx},  
+>  &nbsp; &nbsp;  month = {July},  
 >  &nbsp; &nbsp;  year={2020} 
 
 ### Contact
