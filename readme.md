@@ -27,6 +27,7 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
      	cd object/
      	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
      	```
+	
 	- Adaptation to other target domains **D and W**, respectively
      	```python
      	python image_target.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
