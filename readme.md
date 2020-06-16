@@ -118,7 +118,8 @@ If you find this code useful for your research, please cite our paper
 >  &nbsp; &nbsp;  booktitle={International Conference on Machine Learning (ICML)},  
 >  &nbsp; &nbsp;  pages={xx-xx},  
 >  &nbsp; &nbsp;  month = {July},  
->  &nbsp; &nbsp;  year={2020} 
+>  &nbsp; &nbsp;  year={2020}  
+> }
 
 ### Contact
 
