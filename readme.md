@@ -24,24 +24,24 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 2. ##### Unsupervised Closed-set Domain Adaptation (UDA) on the Office/ Office-Home dataset
 	- Train model on the source domain **A** (**s = 0**)
      	```python
-     	cd object/
-     	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
-     	```
+       	cd object/
+       	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
+     ```
 	
 	- Adaptation to other target domains **D and W**, respectively
-     	```python
-     	python image_target.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
-     	python image_target.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0  
-     	```
+    ```python
+    python image_target.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
+    python image_target.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0  
+     ```
 
 3. ##### Unsupervised Closed-set Domain Adaptation (UDA) on the VisDA-C dataset
 	- Synthetic-to-real 
-      	```python
-      	cd object/
+    ```python
+    cd object/
 	python uda_visda.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
 	python uda_visda.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
 	```
-
+	
 4. ##### Unsupervised Partial-set Domain Adaptation (PDA) on the Office-Home dataset
 	- Train model on the source domain **A** (**s = 0**)
 	```python
@@ -53,7 +53,7 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	```python
 	python image_target.py --savename par0.0 --cls_par 0.0 --zz val --da pda --gent '' --threshold 10 --output seed2020 --seed 2020 --gpu_id 0 --dset office-home --max_epoch 30 --s 0
 	python image_target.py --savename par0.3 --cls_par 0.3 --zz val --da pda --gent '' --threshold 10 --output seed2020 --seed 2020 --gpu_id 0 --dset office-home --max_epoch 30 --s 0
-   	```
+   ```
 
 5. ##### Unsupervised Open-set Domain Adaptation (ODA) on the Office-Home dataset
 	- Train model on the source domain **A** (**s = 0**)
@@ -61,7 +61,7 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	cd object/
 	python image_source.py --trte val --da oda --output seed2020 --seed 2020 --gpu_id 0 --dset office-home --max_epoch 30 --s 0
 	```
-		
+	
 	- Adaptation to other target domains **C and P and R**, respectively
 	```python
 	python image_target_oda.py --savename par0.0 --cls_par 0.0 --zz val --da oda --output seed2020 --seed 2020 --gpu_id 0 --dset office-home --max_epoch 30 --s 0
@@ -76,7 +76,7 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office-caltech --net resnet101 --max_epoch 30 --s 1
 	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office-caltech --net resnet101 --max_epoch 30 --s 2
 	```
-		
+	
 	- Adaptation to the target domain **W** (**t = 3**)
 	```python
 	python image_target.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --issave 1 --dset office-caltech --net resnet101 --max_epoch 30 --s 0
@@ -91,7 +91,7 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	cd object/
 	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office-caltech --net resnet101 --max_epoch 30 --s 0
 	```
-		
+	
 	- Adaptation to multiple target domains **C and P and R** at the same time
 	```python
 	python image_multitarget.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office-caltech --net resnet101 --max_epoch 30 --s 0
@@ -104,7 +104,7 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	cd object/
 	python image_pretrained.py --savename par0.0 --cls_par 0.0 --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 30
 	python image_pretrained.py --savename par0.3 --cls_par 0.3 --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 30
-	```	
+	```
 
 **Please refer *run.sh*** for all the settings for different methods and scenarios.
 
