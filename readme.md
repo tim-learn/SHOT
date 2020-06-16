@@ -122,7 +122,6 @@ If you find this code useful for your research, please cite our paper
 
 ### Contace
 
-- [Jian Liang](mailto:liangjian92@gmail.com)
+- [**Jian Liang**](mailto:liangjian92@gmail.com)
 - [Dapeng Hu](mailto:dapeng.hu@u.nus.edu)
 - [Jiashi Feng](mailto:elefjia@nus.edu.sg)
-> }
