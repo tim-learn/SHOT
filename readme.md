@@ -23,9 +23,9 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	
 2. ##### Unsupervised Closed-set Domain Adaptation (UDA) on the Office/ Office-Home dataset
 	- Train model on the source domain **A** (**s = 0**)
-     	```python
-       	cd object/
-       	python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
+    ```python
+    cd object/
+    python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
      ```
 	
 	- Adaptation to other target domains **D and W**, respectively
