@@ -38,9 +38,9 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 	- Synthetic-to-real 
       	```python
       	cd object/
-      	python uda_visda.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
-      	python uda_visda.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
-      	```
+	python uda_visda.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
+	python uda_visda.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
+	```
 
 4. ##### Unsupervised Partial-set Domain Adaptation (PDA) on the Office-Home dataset
 	- Train model on the source domain **A** (**s = 0**)
