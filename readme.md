@@ -120,7 +120,7 @@ If you find this code useful for your research, please cite our paper
 >  &nbsp; &nbsp;  month = {July},
 >  &nbsp; &nbsp;  year={2020} 
 
-### Contace
+### Contact
 
 - [**Jian Liang**](mailto:liangjian92@gmail.com)
 - [Dapeng Hu](mailto:dapeng.hu@u.nus.edu)
