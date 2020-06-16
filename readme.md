@@ -1,6 +1,8 @@
 Code for our ICML (2020) paper **Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**. 
 
-![framework](figs/shot.jpg)
+```html
+<img src="figs/shot.jpg" width="200"/>
+```
 
 ### Prerequisites:
 - python == 3.6.8
