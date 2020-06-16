@@ -113,8 +113,16 @@ Concerning the **Digits** dsatasets, the code will automatically download three 
 If you find this code useful for your research, please cite our paper
 
 > @inproceedings{liang2020shot,  
-> &nbsp;title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
-> &nbsp;author={Liang, Jian and Hu, Dapeng and Feng, Jiashi},  
-> &nbsp;booktitle={International Conference on Machine Learning (ICML)},  
-> &nbsp;year={2020}  
+>  &nbsp; &nbsp;  title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
+>  &nbsp; &nbsp;  author={Liang, Jian and Hu, Dapeng and Feng, Jiashi},  
+>  &nbsp; &nbsp;  booktitle={International Conference on Machine Learning (ICML)},  
+>  &nbsp; &nbsp;  pages={xx-xx},
+>  &nbsp; &nbsp;  month = {July},
+>  &nbsp; &nbsp;  year={2020} 
+
+### Contace
+
+- [Jian Liang](mailto:liangjian92@gmail.com)
+- [Dapeng Hu](mailto:dapeng.hu@u.nus.edu)
+- [Jiashi Feng](mailto:elefjia@nus.edu.sg)
 > }
