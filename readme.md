@@ -1,5 +1,7 @@
 Code for our ICML (2020) paper **Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**. 
 
+![framework](figs/shot.jpg)
+
 ### Prerequisites:
 - python == 3.6.8
 - pytorch ==1.1.0
@@ -26,13 +28,13 @@ Code for our ICML (2020) paper **Do We Really Need to Access the Source Data? So
     ```python
     cd object/
     python image_source.py --trte val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
-     ```
+    ```
 	
 	- Adaptation to other target domains **D and W**, respectively
     ```python
     python image_target.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0
     python image_target.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --dset office --max_epoch 30 --s 0  
-     ```
+    ```
 
 3. ##### Unsupervised Closed-set Domain Adaptation (UDA) on the VisDA-C dataset
 	- Synthetic-to-real 
@@ -40,7 +42,7 @@ Code for our ICML (2020) paper **Do We Really Need to Access the Source Data? So
     cd object/
 	python uda_visda.py --savename par0.0 --cls_par 0.0 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
 	python uda_visda.py --savename par0.3 --cls_par 0.3 --zz val --da uda --output seed2020 --seed 2020 --gpu_id 0 --max_epoch 3
-	```
+	 ```
 	
 4. ##### Unsupervised Partial-set Domain Adaptation (PDA) on the Office-Home dataset
 	- Train model on the source domain **A** (**s = 0**)
