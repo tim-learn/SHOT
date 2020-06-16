@@ -1,6 +1,7 @@
-Code for our ICML (2020) paper **Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**. 
+Code for our ICML-2020 paper [**Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**](https://arxiv.org/abs/2002.08546). 
 
-### Framework:
+### Framework:  
+
 <img src="figs/shot.jpg" width="600"/>
 
 ### Prerequisites:
