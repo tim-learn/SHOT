@@ -8,7 +8,7 @@ Code for our ICML-2020 paper [**Do We Really Need to Access the Source Data? Sou
 - python == 3.6.8
 - pytorch ==1.1.0
 - torchvision == 0.3.0
-- numpy, scipy, sklearn, PIL, argparse
+- numpy, scipy, sklearn, PIL, argparse, tqdm
 
 ### Dataset:
 
