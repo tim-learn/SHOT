@@ -319,6 +319,9 @@ def train_target(args, zz=''):
             args.out_file.flush()
             print(log_str+'\n')
 
+            netF.train()
+    		netB.train()
+
     # torch.save(netF.state_dict(), osp.join(args.output_dir, "target_F.pt"))
     # torch.save(netB.state_dict(), osp.join(args.output_dir, "target_B.pt"))
     # torch.save(netC.state_dict(), osp.join(args.output_dir, "target_C.pt"))

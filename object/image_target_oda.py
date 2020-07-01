@@ -200,11 +200,6 @@ def train_target(args, zz=''):
 
             features_test = netB(netF(inputs_test))
             outputs_test = netC(features_test)
-
-            outputs_test2 = outputs_test[pred == args.class_num, :]
-            softmax_out = nn.Softmax(dim=1)(outputs_test2)
-            div_loss = torch.mean(loss.Entropy(softmax_out))
-
             outputs_test = outputs_test[pred < args.class_num, :]
             pred = pred[pred < args.class_num]
 
@@ -217,8 +212,6 @@ def train_target(args, zz=''):
 
             classifier_loss = loss.CrossEntropyLabelSmooth(num_classes=args.class_num, epsilon=0)(outputs_test, pred)
             classifier_loss *= args.cls_par
-
-            classifier_loss -= 0.0*div_loss
 
             if args.ent:
                 softmax_out2 = nn.Softmax(dim=1)(outputs_test)
