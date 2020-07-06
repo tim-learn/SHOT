@@ -200,6 +200,7 @@ def train_target(args, zz=''):
 
             features_test = netB(netF(inputs_test))
             outputs_test = netC(features_test)
+            softmax_out = nn.Softmax(dim=1)(outputs_test)
             outputs_test = outputs_test[pred < args.class_num, :]
             pred = pred[pred < args.class_num]
 
@@ -214,8 +215,8 @@ def train_target(args, zz=''):
             classifier_loss *= args.cls_par
 
             if args.ent:
-                softmax_out = nn.Softmax(dim=1)(outputs_test)
-                entropy_loss = torch.mean(loss.Entropy(softmax_out))
+                softmax_out2 = nn.Softmax(dim=1)(outputs_test)
+                entropy_loss = torch.mean(loss.Entropy(softmax_out2))
                 if args.gent:
                     msoftmax = softmax_out.mean(dim=0)
                     gentropy_loss = torch.sum(-msoftmax * torch.log(msoftmax + args.epsilon))
