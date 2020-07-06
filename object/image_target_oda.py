@@ -214,8 +214,8 @@ def train_target(args, zz=''):
             classifier_loss *= args.cls_par
 
             if args.ent:
-                softmax_out2 = nn.Softmax(dim=1)(outputs_test)
-                entropy_loss = torch.mean(loss.Entropy(softmax_out2))
+                softmax_out = nn.Softmax(dim=1)(outputs_test)
+                entropy_loss = torch.mean(loss.Entropy(softmax_out))
                 if args.gent:
                     msoftmax = softmax_out.mean(dim=0)
                     gentropy_loss = torch.sum(-msoftmax * torch.log(msoftmax + args.epsilon))
