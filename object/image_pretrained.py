@@ -178,10 +178,6 @@ def obtain_label(loader, net, args):
     pred_label = dd.argmin(axis=1)
     pred_label = labelset[pred_label]
 
-    acc = np.sum(pred_label == all_label.float().numpy()) / len(all_fea)
-    log_str = 'Accuracy = {:.2f}% -> {:.2f}%'.format(accuracy*100, acc*100)
-    print(log_str+'\n')
-
     for round in range(1):
         aff = np.eye(K)[pred_label]
         initc = aff.transpose().dot(all_fea)
