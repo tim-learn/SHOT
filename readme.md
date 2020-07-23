@@ -17,7 +17,7 @@ Code for our ICML-2020 paper [**Do We Really Need to Access the Source Data? Sou
 - Concerning the **Digits** dsatasets, the code will automatically download three digit datasets (i.e., MNIST, USPS, and SVHN) in './digit/data/'.
 
 ### Results:
-**Please refer results.md** for the detailed results on various datasets.
+Please refer [results.md](./results.md) for the detailed results on various datasets.
 
 
 ### Training:
