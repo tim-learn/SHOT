@@ -102,7 +102,7 @@ Code for our ICML-2020 paper [**Do We Really Need to Access the Source Data? Sou
 	- ImageNet -> Caltech (84 classes) [following the protocol in [PADA](https://github.com/thuml/PADA/tree/master/pytorch/data/imagenet-caltech)]
 	```python
 	 cd object/
-	 python image_pretrained.py --gpu_id 0 --output ckps/target/--cls_par 0.3
+	 python image_pretrained.py --gpu_id 0 --output ckps/target/ --cls_par 0.3
 	```
 
 **Please refer *run.sh*** for all the settings for different methods and scenarios.
