@@ -1,6 +1,12 @@
-## Code for our ICML-2020 paper 
+# Official implementation for **SHOT**
 
-## [**Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**](https://arxiv.org/abs/2002.08546). 
+## [**[ICML-2020] Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**](http://proceedings.mlr.press/v119/liang20a.html)
+
+### Results:
+
+#### **Note that we update the code and further consider the standard learning rate scheduler like DANN and report new results in the final camera ready version.** Please refer [results.md](./results.md) for the detailed results on various datasets.
+
+
 
 ### Framework:  
 
@@ -17,9 +23,6 @@
 - Please manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [Office-Home](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view), [VisDA-C](https://github.com/VisionLearningGroup/taskcv-2017-public/tree/master/classification), [Office-Caltech](http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz) from the official websites, and modify the path of images in each '.txt' under the folder './object/data/'.
 
 - Concerning the **Digits** dsatasets, the code will automatically download three digit datasets (i.e., MNIST, USPS, and SVHN) in './digit/data/'.
-
-### Results:
-**Note that we update the code and further consider the standard learning rate scheduler like DANN and report new results in the final camera ready version.** Please refer [results.md](./results.md) for the detailed results on various datasets.
 
 
 ### Training:
@@ -121,8 +124,8 @@ If you find this code useful for your research, please cite our paper
 >  &nbsp; &nbsp;  title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
 >  &nbsp; &nbsp;  author={Liang, Jian and Hu, Dapeng and Feng, Jiashi},  
 >  &nbsp; &nbsp;  booktitle={International Conference on Machine Learning (ICML)},  
->  &nbsp; &nbsp;  pages={xx-xx},  
->  &nbsp; &nbsp;  month = {July},  
+>  &nbsp; &nbsp;  pages={6028--6039},  
+>  &nbsp; &nbsp;  month = {July 13--18},  
 >  &nbsp; &nbsp;  year={2020}  
 > }
 
