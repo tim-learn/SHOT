@@ -8,6 +8,10 @@
 
 
 
+### ***A stronger extension of SHOT (https://arxiv.org/abs/xx) will be released in a new repository https://github.com/tim-learn/SHOT-plus.***
+
+
+
 ### Framework:  
 
 <img src="figs/shot.jpg" width="600"/>
