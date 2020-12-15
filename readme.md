@@ -2,12 +2,13 @@
 
 ## [**[ICML-2020] Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation**](http://proceedings.mlr.press/v119/liang20a.html)
 
-### *Attention*
-#### ***A stronger extension of SHOT (https://arxiv.org/abs/xx) will be released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
+
+
+### Attention: ***A stronger extension (https://arxiv.org/pdf/2012.07297.pdf)  of SHOT will be released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
 
 ### Results:
 
-##### **Note that we update the code and further consider the standard learning rate scheduler like DANN and report new results in the final camera ready version.** Please refer [results.md](./results.md) for the detailed results on various datasets.
+#### **Note that we update the code and further consider the standard learning rate scheduler like DANN and report new results in the final camera ready version.** Please refer [results.md](./results.md) for the detailed results on various datasets.
 
 
 ### Framework:  
