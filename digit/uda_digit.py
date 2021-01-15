@@ -211,6 +211,10 @@ def train_source(args):
                 best_netF = netF.state_dict()
                 best_netB = netB.state_dict()
                 best_netC = netC.state_dict()
+            
+            netF.train()
+            netB.train()
+            netC.train()
 
     torch.save(best_netF, osp.join(args.output_dir, "source_F.pt"))
     torch.save(best_netB, osp.join(args.output_dir, "source_B.pt"))
@@ -303,7 +307,7 @@ def train_target(args):
 
         if iter_num % interval_iter == 0 and args.cls_par > 0:
             netF.eval()
-            netF.eval()
+            netB.eval()
             mem_label = obtain_label(dset_loaders['target_te'], netF, netB, netC, args)
             mem_label = torch.from_numpy(mem_label).cuda()
             netF.train()
@@ -344,6 +348,8 @@ def train_target(args):
             args.out_file.write(log_str + '\n')
             args.out_file.flush()
             print(log_str+'\n')
+            netF.train()
+            netB.train()
 
     if args.issave:
         torch.save(netF.state_dict(), osp.join(args.output_dir, "target_F_" + args.savename + ".pt"))
