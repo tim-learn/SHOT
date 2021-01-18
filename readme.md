@@ -4,11 +4,13 @@
 
 
 
-### Attention: ***A stronger extension (https://arxiv.org/pdf/2012.07297.pdf)  of SHOT will be released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
+### Attention: ***A stronger extension (https://arxiv.org/pdf/2012.07297.pdf) of SHOT will be released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
 
 ### Results:
 
 #### **Note that we update the code and further consider the standard learning rate scheduler like DANN and report new results in the final camera ready version.** Please refer [results.md](./results.md) for the detailed results on various datasets.
+
+*We have updated the results for **Digits**. Now the results of SHOT-IM for **Digits** are stable and promising. (Thanks to wengzejia1 for pointing the bugs in **uda_digit.py**).*
 
 
 ### Framework:  
