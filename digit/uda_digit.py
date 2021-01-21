@@ -438,7 +438,8 @@ if __name__ == "__main__":
     torch.cuda.manual_seed(SEED)
     np.random.seed(SEED)
     random.seed(SEED)
-    # torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
     args.output_dir = osp.join(args.output, 'seed' + str(args.seed), args.dset)
     if not osp.exists(args.output_dir):
