@@ -123,7 +123,7 @@
 	 python image_pretrained.py --gpu_id 0 --output ckps/target/ --cls_par 0.3
 	```
 
-**Please refer *run.sh*** for all the settings for different methods and scenarios.
+**Please refer *./object/run.sh*** for all the settings for different methods and scenarios.
 
 ### Citation
 
