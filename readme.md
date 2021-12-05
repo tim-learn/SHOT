@@ -6,7 +6,7 @@
 
 ### Attention-v2: ***we release the code of our recent black-box UDA method (DINE, https://arxiv.org/pdf/2104.01539.pdf) in the following repository (https://github.com/tim-learn/DINE).*** 
 
-#### Attention: ***The code of our stronger TPAMI extension (SHOT++, https://arxiv.org/pdf/2012.07297.pdf) of SHOT has been released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
+#### Attention: ***The code of our stronger TPAMI extension (SHOT++, https://arxiv.org/pdf/2012.07297.pdf) has been released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
 
 
 
