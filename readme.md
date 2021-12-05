@@ -4,13 +4,17 @@
 
 
 
-### Attention: ***A stronger extension (https://arxiv.org/pdf/2012.07297.pdf) of SHOT will be released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
+### Attention-v2: ***we also release the code of our recent black-box UDA method (DINE, https://arxiv.org/pdf/2104.01539.pdf) in the following repository (https://github.com/tim-learn/DINE).*** 
+
+#### Attention: ***A stronger TPAMI extension (SHOT++, https://arxiv.org/pdf/2012.07297.pdf) of SHOT has been released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
+
+
 
 ### Results:
 
 #### **Note that we update the code and further consider the standard learning rate scheduler like DANN and report new results in the final camera ready version.** Please refer [results.md](./results.md) for the detailed results on various datasets.
 
-*We have updated the results for **Digits**. Now the results of SHOT-IM for **Digits** are stable and promising. (Thanks to wengzejia1 for pointing the bugs in **uda_digit.py**).*
+*We have updated the results for **Digits**. Now the results of SHOT-IM for **Digits** are stable and promising. (Thanks to @wengzejia1 for pointing the bugs in **uda_digit.py**).*
 
 
 ### Framework:  
@@ -25,7 +29,7 @@
 
 ### Dataset:
 
-- Please manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [Office-Home](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view), [VisDA-C](https://github.com/VisionLearningGroup/taskcv-2017-public/tree/master/classification), [Office-Caltech](http://www.vision.caltech.edu/Image_Datasets/Caltech256/256_ObjectCategories.tar) from the official websites, and modify the path of images in each '.txt' under the folder './object/data/'.
+- Please manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [Office-Home](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view), [VisDA-C](https://github.com/VisionLearningGroup/taskcv-2017-public/tree/master/classification), [Office-Caltech](http://www.vision.caltech.edu/Image_Datasets/Caltech256/256_ObjectCategories.tar) from the official websites, and modify the path of images in each '.txt' under the folder './object/data/'. [**How to generate such txt files could be found in https://github.com/tim-learn/Generate_list **]
 
 - Concerning the **Digits** dsatasets, the code will automatically download three digit datasets (i.e., MNIST, USPS, and SVHN) in './digit/data/'.
 
@@ -123,16 +127,24 @@
 
 ### Citation
 
-If you find this code useful for your research, please cite our paper
+If you find this code useful for your research, please cite our papers
 
-> @inproceedings{liang2020shot,  
->  &nbsp; &nbsp;  title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
->  &nbsp; &nbsp;  author={Liang, Jian and Hu, Dapeng and Feng, Jiashi},  
->  &nbsp; &nbsp;  booktitle={International Conference on Machine Learning (ICML)},  
->  &nbsp; &nbsp;  pages={6028--6039},  
->  &nbsp; &nbsp;  month = {July 13--18},  
->  &nbsp; &nbsp;  year={2020}  
+> @inproceedings{liang2020we,  
+>  &nbsp; &nbsp; title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
+>  &nbsp; &nbsp; author={Liang, Jian and Hu, Dapeng and Feng, Jiashi}, 
+>  &nbsp; &nbsp; booktitle={International Conference on Machine Learning (ICML)},  
+>  &nbsp; &nbsp; pages={6028--6039},  
+>  &nbsp; &nbsp; month = {July 13--18},  
+>  &nbsp; &nbsp; year={2020}  
 > }
+
+>@article{liang2021source,  
+>  &nbsp; &nbsp; title={**Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer**},  
+>  &nbsp; &nbsp; author={Liang, Jian and Hu, Dapeng and Wang, Yunbo and He, Ran and Feng, Jiashi},  
+>  &nbsp; &nbsp; journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  
+>  &nbsp; &nbsp; year={2021},  
+>  &nbsp; &nbsp; note={In Press}  
+>}
 
 ### Contact
 
