@@ -131,20 +131,19 @@ If you find this code useful for your research, please cite our papers
 
 ```
 @inproceedings{liang2020we, 
-	title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation}, 
-	author={Liang, Jian and Hu, Dapeng and Feng, Jiashi}, 
-	booktitle={International Conference on Machine Learning (ICML)},  
-	pages={6028--6039},  
-	month = {July 13--18},  
-	year={2020}
+ title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation}, 
+ author={Liang, Jian and Hu, Dapeng and Feng, Jiashi}, 
+ booktitle={International Conference on Machine Learning (ICML)},  
+ pages={6028--6039},
+ year={2020}
 }
 
 @article{liang2021source,  
-	title={Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer}, 
-	author={Liang, Jian and Hu, Dapeng and Wang, Yunbo and He, Ran and Feng, Jiashi},   
-	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
-	year={2021},  
-	note={In Press}  
+ title={Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer}, 
+ author={Liang, Jian and Hu, Dapeng and Wang, Yunbo and He, Ran and Feng, Jiashi},   
+ journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+ year={2021}, 
+ note={In Press}  
 }
 ```
 
