@@ -4,9 +4,9 @@
 
 
 
-### Attention-v2: ***we also release the code of our recent black-box UDA method (DINE, https://arxiv.org/pdf/2104.01539.pdf) in the following repository (https://github.com/tim-learn/DINE).*** 
+### Attention-v2: ***we release the code of our recent black-box UDA method (DINE, https://arxiv.org/pdf/2104.01539.pdf) in the following repository (https://github.com/tim-learn/DINE).*** 
 
-#### Attention: ***A stronger TPAMI extension (SHOT++, https://arxiv.org/pdf/2012.07297.pdf) of SHOT has been released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
+#### Attention: ***The code of our stronger TPAMI extension (SHOT++, https://arxiv.org/pdf/2012.07297.pdf) of SHOT has been released in a new repository (https://github.com/tim-learn/SHOT-plus).*** 
 
 
 
@@ -129,22 +129,25 @@
 
 If you find this code useful for your research, please cite our papers
 
-> @inproceedings{liang2020we,  
->  &nbsp; &nbsp; title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation},  
->  &nbsp; &nbsp; author={Liang, Jian and Hu, Dapeng and Feng, Jiashi}, 
->  &nbsp; &nbsp; booktitle={International Conference on Machine Learning (ICML)},  
->  &nbsp; &nbsp; pages={6028--6039},  
->  &nbsp; &nbsp; month = {July 13--18},  
->  &nbsp; &nbsp; year={2020}  
-> }
+```
+@inproceedings{liang2020we, 
+	title={Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation}, 
+	author={Liang, Jian and Hu, Dapeng and Feng, Jiashi}, 
+	booktitle={International Conference on Machine Learning (ICML)},  
+	pages={6028--6039},  
+	month = {July 13--18},  
+	year={2020}
+}
 
->@article{liang2021source,  
->  &nbsp; &nbsp; title={Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer},  
->  &nbsp; &nbsp; author={Liang, Jian and Hu, Dapeng and Wang, Yunbo and He, Ran and Feng, Jiashi},  
->  &nbsp; &nbsp; journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  
->  &nbsp; &nbsp; year={2021},  
->  &nbsp; &nbsp; note={In Press}  
->}
+@article{liang2021source,  
+	title={Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer}, 
+	author={Liang, Jian and Hu, Dapeng and Wang, Yunbo and He, Ran and Feng, Jiashi},   
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+	year={2021},  
+	note={In Press}  
+}
+```
+
 
 ### Contact
 
