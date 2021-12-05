@@ -139,7 +139,7 @@ If you find this code useful for your research, please cite our papers
 > }
 
 >@article{liang2021source,  
->  &nbsp; &nbsp; title={**Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer**},  
+>  &nbsp; &nbsp; title={Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer},  
 >  &nbsp; &nbsp; author={Liang, Jian and Hu, Dapeng and Wang, Yunbo and He, Ran and Feng, Jiashi},  
 >  &nbsp; &nbsp; journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  
 >  &nbsp; &nbsp; year={2021},  
