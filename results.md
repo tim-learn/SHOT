@@ -113,7 +113,7 @@ Code for our ICML-2020 paper [**Do We Really Need to Access the Source Data? Sou
 
 #### Table 8 [MSDA/ MTDA results on Office-Caltech]
 
-| Methods@MSDA   | ->Ar | ->Cl | ->Pr | ->Re | Avg. |
+| Methods@MSDA   | ->A | ->C | ->D | ->W | Avg. |
 | -------------- | ---- | ---- | ---- | ---- | ---- |
 | srconly (2019) | 95.2 | 93.9 | 99.4 | 98.0 | |
 | srconly (2020) | 95.4 | 93.5 | 98.7 | 98.6 | |
@@ -124,11 +124,11 @@ Code for our ICML-2020 paper [**Do We Really Need to Access the Source Data? Sou
 | SHOT-IM (2021) | 96.4 | 96.3 | 98.7 | 99.7 | |
 | SHOT-IM (Avg.) | 96.2 | 96.1 | 98.5 | 99.7 | 97.6 |
 | SHOT (2019) | 96.2 | 95.9 | 98.7 | 99.7 | |
-| SHOT (2020) | 96.5 | 96.1 | 98.7 | 99.7 |
+| SHOT (2020) | 96.5 | 96.1 | 98.7 | 99.7 ||
 | SHOT (2021) | 96.6 | 96.6 | 98.1 | 99.7 | |
 | SHOT (Avg.) | 96.4 | 96.2 | 98.5 | 99.7 | 97.7 |
 
-| Methods@MTDA   | Ar-> | Cl-> | Pr-> | Re-> | Avg. |
+| Methods@MTDA   | A-> | C-> | D-> | W-> | Avg. |
 | -------------- | ---- | ---- | ---- | ---- | ---- |
 | srconly (2019) | 90.4 | 95.9 | 90.3 |	90.6 | |
 | srconly (2020) | 91.2 | 95.9 | 90.2 | 91.1 | |
