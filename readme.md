@@ -4,7 +4,7 @@
 
 
 
-- **2022/6/6      We correct the bug in the pseudo-labeling function (def obtain_label), thanks to @TomSheng21.**
+- **2022/6/6      We correct a bug in the pseudo-labeling function (def obtain_label), many thanks to @TomSheng21.**
 - **2022/2/8      We upload the pretrained source models via Google drive in [pretrained-models.md](./pretrained-models.md).**
 
 
