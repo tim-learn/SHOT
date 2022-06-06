@@ -273,33 +273,28 @@ def obtain_label(loader, netF, netB, netC, args):
     all_fea = all_fea.float().cpu().numpy()
     K = all_output.size(1)
     aff = all_output.float().cpu().numpy()
-    initc = aff.transpose().dot(all_fea)
-    initc = initc / (1e-8 + aff.sum(axis=0)[:,None])
-    cls_count = np.eye(K)[predict].sum(axis=0)
-    labelset = np.where(cls_count>args.threshold)
-    labelset = labelset[0]
-    # print(labelset)
 
-    dd = cdist(all_fea, initc[labelset], args.distance)
-    pred_label = dd.argmin(axis=1)
-    pred_label = labelset[pred_label]
-
-    for round in range(1):
-        aff = np.eye(K)[pred_label]
+    for _ in range(2):
         initc = aff.transpose().dot(all_fea)
         initc = initc / (1e-8 + aff.sum(axis=0)[:,None])
+        cls_count = np.eye(K)[predict].sum(axis=0)
+        labelset = np.where(cls_count>args.threshold)
+        labelset = labelset[0]
+
         dd = cdist(all_fea, initc[labelset], args.distance)
         pred_label = dd.argmin(axis=1)
-        pred_label = labelset[pred_label]
+        predict = labelset[pred_label]
 
-    acc = np.sum(pred_label == all_label.float().numpy()) / len(all_fea)
+        aff = np.eye(K)[predict]
+
+    acc = np.sum(predict == all_label.float().numpy()) / len(all_fea)
     log_str = 'Accuracy = {:.2f}% -> {:.2f}%'.format(accuracy * 100, acc * 100)
 
     args.out_file.write(log_str + '\n')
     args.out_file.flush()
     print(log_str+'\n')
 
-    return pred_label.astype('int')
+    return predict.astype('int')
 
 
 if __name__ == "__main__":
